@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            
+            
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+        .nav1 {
+            display: flex;
+            align-items: center;
+        }
+        .nav1 a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+        .nav2 {
+            display: flex;
+            align-items: center;
+        }
+        .nav2 a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+        .nav2 .material-symbols-outlined {
+            font-size: 24px;
+            margin-left: 10px;
+            
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 40%;
+            margin: 15px;
+        }
+        .content input {
+            border: 1px solid rgb(241, 222, 222);
+            border-radius: 20px;
+            width: 100%;
+            height: 45px;
+            padding-left: 40px;
+            padding-right: 100px; 
+            font-size: 16px;
+            position: relative;
+        }
+        .search-icon, .search-options img {
+            position: absolute;
+            top: 30%;
+            display: flex;
+            color: cadetblue;
+        }
+        .search-icon {
+            left: 15px;
+        }
+        .search-options img {
+            right: 60px; 
+            margin-left: 10px;
+        }
+        .search-options img:last-child {
+            right: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: rgb(243, 243, 248);
+            color: black;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        .bookmarks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .bookmarks a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            text-decoration: none;
+            color: #000308;
+            font-size: large;
+            margin-left: 35px;
+        }
+        .bookmarks img {
+            width: 50px;
+            height: 50px;
+            border: 1px ;
+            background-color:rgb(244, 234, 234) ;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-left: 15px;
+        }
+
+        .lang {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+        .lang a {
+            padding: 5px 10px;
+            color: rgb(104, 22, 162);
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-left: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            background-color: #f1f1f1;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer1 a, .footer2 a {
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="nav1">
+                <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN">Store</a>
+            </div>
+            <div class="nav2">
+                <a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
+                <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a>
+                <a href="https://labs.google.com/search?source=hp&authuser=0">
+                    <span class="material-symbols-outlined">science</span>
+                </a>
+                <a href="#"><span class="material-symbols-outlined">apps</span></a>
+                <a href="#"><span class="material-symbols-outlined">account_circle</span></a>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="./paris-games-artistic-gymnastics-6753651837110525-law.gif" alt="">
+        </div>
+        <div class="content">
+            
+            <input type="search" placeholder="Search Google or type a URL">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <span class="search-options">
+                <img src="https://img.icons8.com/material-rounded/24/000000/microphone.png" alt="Search by Voice" title="Search by Voice">
+
+                <img src="https://img.icons8.com/material-rounded/24/000000/camera.png" alt="Search by Image" title="Search by Image">
+            </span>
+        </div>
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <div class="bookmarks">
+            <a href="https://www.w3schools.com" target="_blank">
+                <img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="W3Schools">
+                W3Schools
+            </a>
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+                Amazon
+            </a>
+            <a href="https://mail.google.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">
+                Gmail
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+                YouTube
+            </a>
+        </div>
+        <div class="lang">
+            <label for="">Google offered in:</label>
+            <a href="https://mail.google.com/mail/?authuser=0&ogbl">English</a>
+            <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Hindi</a>
+            <a href="https://mail.google.com/mail/?authuser=0&ogbl">Marathi</a>
+            <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Tamil</a>
+        </div>
+
+        <div class="footer">
+            <div class="footer1">
+                <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header">Advertising</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN">Business</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN">How Search Works</a>
+            </div>
+            <div class="footer2">
+                <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header">Privacy</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN">Terms</a>
+                <a href="https://store.google.com/IN?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN">Settings</a>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
